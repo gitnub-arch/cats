@@ -40,6 +40,9 @@ h4 {
   margin-right: 30px;
   opacity: 0.5;
 }
+.lux .img {
+  margin-bottom: 25px;
+}
 .lux__image {
   margin-right: 70px;
 }
@@ -110,6 +113,7 @@ h4 {
     font-size: 15px;
   }
   .lux .img {
+    margin-bottom: 0;
     width: 86px;
     height: 84px;
   }

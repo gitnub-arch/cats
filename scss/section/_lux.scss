@@ -12,6 +12,9 @@
     margin-right: 30px;
     opacity: 0.5;
   }
+  .img {
+    margin-bottom: 25px;
+  }
   &__image {
     margin-right: 70px;
   }
@@ -96,6 +99,7 @@
   
 
     .img {
+      margin-bottom: 0;
       width: 86px;
       height: 84px;
     }
