@@ -33,6 +33,10 @@
     margin-bottom: 79px;
   }
 
+  .swiper-pagination {
+    position: relative;
+  }
+
   .swiper-pagination-bullet {
     background-color: #fac663;
   }
@@ -63,8 +67,11 @@
 }
 
 .swiper-button-next {
-  margin-top: 200px;
-  margin-right: 200px;
+   margin-top: 200px;
+  right: 150px;
+  position: absolute;
+  width: 36px;
+  height: 36px;
 
   &::after {
     font-weight: 900;
@@ -75,8 +82,11 @@
 }
 
 .swiper-button-prev {
-  margin-left: 1140px;
+  position: absolute;
   margin-top: 200px;
+  left: 1200px;
+  width: 36px;
+  height: 36px;
 
   &::after {
     font-weight: 900;
@@ -97,17 +107,14 @@
     .swiper-slide {
       display: inline;
       margin: 0;
-
     }
     &__img {
       margin-left: 0px;
     }
 
-
     &__button {
       display: flex;
       border-radius: 30px;
-      
     }
   }
 }
