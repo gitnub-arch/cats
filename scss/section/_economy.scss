@@ -51,23 +51,21 @@
   margin-left: -80px;
   &__info {
     margin: 40px 117px 40px 100px;
+  }
 
-    &__list {
-      &__item {
-        line-height: 20px;
-        font-size: 16px;
-        font-weight: 400;
-        &::marker {
-          color: #fac663;
-          font-size: 25px;
-        }
-      }
+  &__item {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    &::marker {
+      color: #fac663;
+      font-size: 25px;
     }
   }
 }
 
 .swiper-button-next {
-   margin-top: 200px;
+  margin-top: 200px;
   right: 150px;
   position: absolute;
   width: 36px;

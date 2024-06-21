@@ -177,12 +177,12 @@ h4 {
 .card__info {
   margin: 40px 117px 40px 100px;
 }
-.card__info__list__item {
+.card__item {
   line-height: 20px;
   font-size: 16px;
   font-weight: 400;
 }
-.card__info__list__item::marker {
+.card__item::marker {
   color: #fac663;
   font-size: 25px;
 }
