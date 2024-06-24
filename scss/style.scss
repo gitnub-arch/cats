@@ -1,18 +1,14 @@
 @import "./component/typografy";
+@import "./variables";
 @import "./section/lux";
 @import "./section/economy";
-
-
-
-
-
+@import "./section/main-hero";
 
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 
 
 body {
