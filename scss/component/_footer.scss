@@ -5,7 +5,7 @@
 
   &__left {
     background-color: $bg-orange;
-    width: 300px;
+    width: 100%;
     padding: 70px 111px 70px 198px;
   }
 
@@ -44,9 +44,7 @@
     margin-bottom: 10px;
   }
 
-  #map {
-    width: 415px;
-  }
+
 
   &__line {
     margin: 15px 0;
@@ -81,7 +79,7 @@
 
     &__left {
       background-color: $bg-orange;
-      max-width: 100%;
+      width: 568px;
       padding: 15px 40px;
     }
 

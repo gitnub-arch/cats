@@ -97,7 +97,17 @@
 }
 
 .header {
+  @media screen and (min-width: 560px) {
+    &__menu {
+      display: none;
+    }
+  }
 
+  @media screen and (max-width: 1440px) {
+    &__menu {
+      display: flex;
+    }
+  }
 
   @media screen and (max-width: 320px) {
     .nav__item {
