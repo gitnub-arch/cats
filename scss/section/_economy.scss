@@ -10,8 +10,8 @@
     display: flex;
     border-radius: 25px;
     padding-left: 35px;
-    color: #fff;
-    background-color: #ff7236;
+    color: $text-white;
+    background-color: $bg-btn;
     border: none;
     &:hover {
       opacity: 0.7;
@@ -21,7 +21,7 @@
   &__vector {
     margin: 10px 3px 5px 15px;
     padding: 10px;
-    background-color: #fff;
+    background-color: $bg-white;
     border-radius: 90px;
   }
 
@@ -38,13 +38,13 @@
   }
 
   .swiper-pagination-bullet {
-    background-color: #fac663;
+    background-color: $bg-orange;
   }
 }
 
 .card {
   margin-left: 100px;
-  background-color: #fff;
+  background-color: $bg-white;
   border-radius: 8px;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -58,7 +58,7 @@
     font-size: 16px;
     font-weight: 400;
     &::marker {
-      color: #fac663;
+      color: $bg-orange;
       font-size: 25px;
     }
   }
@@ -74,8 +74,8 @@
   &::after {
     font-weight: 900;
     font-size: 14px;
-    background-color: #fff;
-    color: #ff7236;
+    background-color: $bg-white;
+    color: $bg-btn;
   }
 }
 
@@ -89,8 +89,8 @@
   &::after {
     font-weight: 900;
     font-size: 14px;
-    background-color: #fff;
-    color: #ff7236;
+    background-color: $bg-white;
+    color: $bg-btn;
   }
 }
 
