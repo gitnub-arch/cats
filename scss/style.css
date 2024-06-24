@@ -598,8 +598,22 @@ h4 {
   padding-right: 690px;
 }
 .header .nav__item {
+  position: relative;
   text-decoration: none;
   color: #000;
+}
+.header .nav__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  transition: 0.3s;
+}
+.header .nav__item.active::before {
+  width: 100%;
 }
 .header .header__menu {
   position: absolute;
