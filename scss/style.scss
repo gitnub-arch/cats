@@ -1,8 +1,13 @@
+@import "./vendors/reset";
+@import "./viraibles";
+
 @import "./component/typografy";
-@import "./variables";
 @import "./section/lux";
 @import "./section/economy";
-@import "./section/main-hero";
+@import "./section/catalog";
+
+@import "./scss/component/header";
+@import "./component/footer";
 
 
 .container {
