@@ -103,17 +103,19 @@
     &__left {
       background-color: $bg-orange;
       padding: 30px;
-      width: 320px;
+      width: 230px;
     }
 
     #map {
-      width: 190px;
+      width: 145px;
       height: 300px;
     }
 
     &__line {
       margin: 15px 0;
     }
+
+  
 
     &__bottom {
       padding-top: 20px;
@@ -125,6 +127,11 @@
     &__txt {
       font-size: 12px;
       font-weight: 400;
+    }
+
+    .man__ul {
+      flex-wrap: wrap;
+      line-height: 20px;
     }
 
     &__confidencial {

@@ -78,16 +78,18 @@
 }
 
 .popup {
-  display: none; /* Скрыть поп-ап по умолчанию */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 100; /* Установить высокий z-index, чтобы поп-ап был поверх остальных элементов */
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 570px;
+  margin: auto;
+  border: 2px solid #e1e1e1;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
 }
 
 .popup-content {
@@ -103,6 +105,7 @@
   .header {
     margin-bottom: 0;
   }
+
 
   .header__logo {
     margin-left: 0px;
