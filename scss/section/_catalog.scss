@@ -9,10 +9,13 @@
     border-radius: 25px;
     box-shadow: 0 4px 10px -4px;
     padding: 12px 60px 13px 30px;
-    right: 0;
+    right: 60px;
     font-size: 14px;
     font-weight: 400;
+    z-index: 1;
   }
+
+
 
   &__filter-btn {
     display: none;
@@ -56,7 +59,10 @@
 
   &__cenrt {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+  &__aside {
+    margin-left: 70px;
   }
   &__aside-col {
     align-items: center;
@@ -112,6 +118,7 @@
     color: $text-black;
     font-size: 36px;
     font-weight: 500;
+    margin-left: 115px;
   }
 
   &__subtitle {
@@ -193,8 +200,8 @@
     position: absolute;
     font-size: 36px;
     font-weight: 700;
-    top: 78px;
-    left: 270px;
+    top: 100px;
+    left: 450px;
   }
 
   &__free-subtitle {
@@ -202,8 +209,8 @@
     position: absolute;
     font-size: 56px;
     font-weight: 700;
-    top: 117px;
-    left: 270px;
+    top: 140px;
+    left: 450px;
   }
 
   &__free-txt {
@@ -211,21 +218,28 @@
     position: absolute;
     font-size: 14px;
     font-weight: 400;
-    top: 180px;
-    left: 270px;
+    top: 205px;
+    left: 450px;
   }
 
   &__btn-cont {
     position: absolute;
-    top: 250px;
-    left: 270px;
+    top: 270px;
+    left: 450px;
   }
 }
 
 .catalog {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 560px) {
     &__aside {
       display: none;
+    }
+&__title {
+  margin-left: 35px;
+  margin-bottom: 25px;
+}
+    .button {
+      right: 0;
     }
 
     &__top {

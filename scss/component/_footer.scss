@@ -5,11 +5,35 @@
 
   &__left {
     background-color: $bg-orange;
-    width: 100%;
     padding: 70px 111px 70px 198px;
+    width: 525px;
   }
 
- 
+  .man {
+    display: flex; /* Показать навигацию по умолчанию */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .man__ul {
+    display: flex; /* Показать навигацию по умолчанию */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .man__li {
+    margin-left: 20px;
+  }
+  
+  .man__item {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
 
   &__img {
     padding-top: 15px;
@@ -44,8 +68,6 @@
     margin-bottom: 10px;
   }
 
-
-
   &__line {
     margin: 15px 0;
   }
@@ -71,20 +93,21 @@
 }
 
 .footer {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 560px) {
     &__cont {
       display: block;
       margin-bottom: 10px;
+      width: 320px;
     }
 
     &__left {
       background-color: $bg-orange;
-      width: 568px;
-      padding: 15px 40px;
+      padding: 30px;
+      width: 320px;
     }
 
     #map {
-      width: 320px;
+      width: 190px;
       height: 300px;
     }
 

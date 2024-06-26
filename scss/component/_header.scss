@@ -1,137 +1,135 @@
 .header {
-  margin-top: 20px;
-  margin-bottom: 80px;
-  &__line {
-    display: flex;
-    align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 60px;
+}
+
+.nav {
+  display: flex; /* Показать навигацию по умолчанию */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__ul {
+  display: flex; /* Показать навигацию по умолчанию */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__li {
+  margin-left: 20px;
+}
+
+.nav__item {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none; /* Скрыть бургер по умолчанию */
+}
+
+.burger__span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Стиль бургера, когда он активен (в виде крестика) */
+.burger.active .burger__span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .burger__span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .burger__span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.popup {
+  display: none; /* Скрыть поп-ап по умолчанию */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Установить высокий z-index, чтобы поп-ап был поверх остальных элементов */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+/* Адаптивный режим для мобильных устройств */
+@media (max-width: 768px) { /* Изменить на нужный размер экрана */
+  .nav {
+    display: none; /* Скрыть навигацию на мобильных */
   }
 
-  &__logo {
-    padding-right: 690px;
+  .header {
+    margin-bottom: 0;
   }
 
-  .nav__item {
-    position: relative;
-    text-decoration: none;
-    color: $text-black;
+  .header__logo {
+    margin-left: 0px;
   }
 
-  .nav__item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
-    background-color: #000;
-    transition: 0.3s;
+  .burger {
+    display: flex; /* Показывать бургер на мобильных */
   }
 
-  .nav__item.active::before {
-   width: 100%;
+  .popup {
+    width: 80%; /* Занимает 80% ширины экрана */
+    max-width: 300px; /* Максимальная ширина */
   }
-
-  //----- Demo defaults -----
-
-  //----- Header styling -----
-  // Change this to fit your needs
-  // This example is assuming that you are using the hamburger menu button in the header
-
-  .header__menu {
-    position: absolute;
-    top: 40px;
-    right: 20%;
-  }
-
-  //----- Hamburger component -----
-
-  // Config
-  $hamburger__height: 30px;
-  $hamburger__width: 40px;
-  $hamburger__layer__height: 6px;
-  $hamburger__colour: #000;
-
-  // Structure
-  .hamburger {
-    display: block;
-    position: absolute;
-    width: $hamburger__height;
-    height: $hamburger__width;
-    z-index: 2;
-  }
-
-  .hamburger__inner {
-    display: block;
-    width: $hamburger__width;
-    height: $hamburger__layer__height;
-    margin-top: $hamburger__layer__height * 2;
-    background: $hamburger__colour;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-
-    &::before,
-    &::after {
-      display: block;
-      position: absolute;
-      content: "";
-      z-index: -1;
-      width: $hamburger__width;
-      height: $hamburger__layer__height;
-      background: $hamburger__colour;
-      -webkit-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-    }
-    &::before {
-      top: 0;
-    }
-    &::after {
-      top: $hamburger__layer__height * 4;
-    }
-  }
-
-  // Clicked State
-  .hamburger--open {
-    .hamburger__inner {
-      background: none;
-
-      &::before,
-      &::after {
-        top: $hamburger__layer__height * 2;
-      }
-      &::before {
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-      }
-      &::after {
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-      }
-    }
+  .nav__ul {
+    flex-direction: column;
+    line-height: 4;
   }
 }
 
-.header {
-  @media screen and (min-width: 560px) {
-    &__menu {
-      display: none;
-    }
+@media (min-width: 769px) { /* Изменить на нужный размер экрана */
+  .burger {
+    display: none; /* Скрыть бургер на больших экранах */
   }
 
-  @media screen and (max-width: 1440px) {
-    &__menu {
-      display: flex;
-    }
+  .popup {
+    display: none; /* Скрыть поп-ап на больших экранах */
   }
 
-  @media screen and (max-width: 320px) {
-    .nav__item {
-      display: none;
-    }
-
-    .logo__image {
-      margin-left: 20px;
-    }
-  }
+  
 }

@@ -75,10 +75,16 @@
 
 .lux {
   @media screen and (max-width: 560px) {
+    .lux {
+      padding-top: 0;
+    }
     .adaptiv {
       flex-direction: column-reverse;
+      margin-left: 15px;
     }
-
+&__info {
+  margin: auto;
+}
     &__column {
       display: flex;
       gap: 16px;
